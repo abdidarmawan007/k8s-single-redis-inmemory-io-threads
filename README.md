@@ -6,9 +6,9 @@ kubectl apply -f redis.yaml
 ```
 ## test benchmark
 ```
-redis-benchmark -h redis -t get,set -n 1000000 -q
-SET: 50231.06 requests per second
-GET: 50035.02 requests per second
+redis-benchmark -h redis -t set,get -q
+SET: 91827.37 requests per second
+GET: 93196.65 requests per second
 ```
 
 ![alt text](https://i.imgur.com/kx2OYA1.png)
