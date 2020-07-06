@@ -21,6 +21,7 @@ spec:
           image: redis:6.0-alpine # redis 6 alpine
           imagePullPolicy: Always
           # --io-threads number based on CPU core
+          # we suggest enabling it only in machines that have at least 4 or more cores, leaving at least one spare core.
           args: ["--appendonly", "no","--maxmemory-policy", "volatile-lfu", "--io-threads", "2"]
           ports:
             - containerPort: 6379
@@ -28,8 +29,8 @@ spec:
               name: redis
           resources:
               limits:
-                 cpu: "2" # 2 core
-                 memory: "3000Mi"
+                 cpu: "4" # 4 core
+                 memory: "6000Mi"
 ---
 ## config for service
 apiVersion: v1
