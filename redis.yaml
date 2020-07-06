@@ -20,9 +20,9 @@ spec:
         - name: redis
           image: redis:6.0-alpine # redis 6 alpine
           imagePullPolicy: Always
-          # --io-threads number based on CPU core
-          # we suggest enabling it only in machines that have at least 4 or more cores, leaving at least one spare core.
-          args: ["--appendonly", "no","--maxmemory-policy", "volatile-lfu", "--io-threads", "2"]
+          # --io-threads number based on CPU core, leaving at least one spare core
+          # we suggest enabling it only in machines that have at least 4 or more cores
+          args: ["--appendonly", "no","--maxmemory-policy", "volatile-lfu", "--io-threads", "3"]
           ports:
             - containerPort: 6379
               protocol: TCP
