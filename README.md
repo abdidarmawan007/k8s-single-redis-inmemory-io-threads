@@ -10,5 +10,3 @@ redis-benchmark -h redis -t set,get -q
 SET: 91827.37 requests per second
 GET: 93196.65 requests per second
 ```
-
-![alt text](https://i.imgur.com/kx2OYA1.png)
