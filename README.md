@@ -1,4 +1,4 @@
-# k8s redis v6 statefullset in-memory with io-threads
+# k8s statefullset redis v6 in-memory with io-threads
 
 ## create redis k8s
 ```
