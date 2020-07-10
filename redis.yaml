@@ -22,6 +22,7 @@ spec:
           imagePullPolicy: Always
           # --io-threads number based on CPU core, leaving at least one spare core
           # we suggest enabling it only in machines that have at least 4 or more cores
+          # volatile-lfu better for better hits/misses ratio web/app cache, and not for session login
           args: ["--appendonly", "no","--maxmemory-policy", "volatile-lfu", "--io-threads", "3"]
           ports:
             - containerPort: 6379
