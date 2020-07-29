@@ -1,6 +1,6 @@
 # k8s statefullset redis v6 in-memory with io-threads
-Tips for production: use type vm with high cpu speed for node-pool, for redis better use high cpu speed, not more core cpu
-for example N2 machine types base frequency of 2.8 GHz and a sustained all core turbo of 3.4 GHz
+Tips for production: use type vm with high cpu speed for node-pool,redis better use high cpu speed, not more core cpu
+for example N2 machine types base frequency 2.8 GHz and a sustained all core turbo 3.4 GHz
 
 ## create redis k8s
 ```
