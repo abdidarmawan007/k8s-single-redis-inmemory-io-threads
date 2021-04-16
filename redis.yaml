@@ -18,7 +18,7 @@ spec:
       #  cloud.google.com/gke-nodepool: pool-e2-high-2
       containers:
         - name: redis
-          image: redis:6.0-alpine # redis 6 alpine
+          image: 6.2.1-alpine # redis 6 alpine
           imagePullPolicy: Always
           # --io-threads number based on CPU core, leaving at least one spare core
           # we suggest enabling it only in machines that have at least 4 or more cores
